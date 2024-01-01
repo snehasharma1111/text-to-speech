@@ -3,14 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css" />
 		<title>Text to Speech</title>
 	</head>
-	<body>
-		<form>
-			<input type="text" name="text" id="text" />
-			<button type="submit">Speak</button>
+	<body
+		class="flex justify-center items-center flex-col gap-8 my-auto h-screen"
+	>
+		<h1
+			class="mx-auto text-sky-900 text-4xl font-medium mx-auto text-center"
+		>
+			Text to Speech Convertor
+		</h1>
+		<form
+			class="w-20 mx-auto flex justify-center items-center flex-col gap-8"
+		>
+			<input
+				type="text"
+				name="text"
+				id="text"
+				class="border-2 border-slate-200 py-1 px-2 active:border-slate-400 focus:border-slate-400 rounded-md outline-none resize"
+			/>
+			<button
+				type="submit"
+				class="bg-sky-200 px-7 py-2.5 hover:bg-sky-300 rounded-md text-md"
+			>
+				Speak
+			</button>
 		</form>
-    <script src="./app.js"></script>
+		<script src="./app.js"></script>
 	</body>
 </html>
