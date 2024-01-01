@@ -4,12 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/feather-icons"></script>
 		<link rel="stylesheet" href="style.css" />
 		<title>Text to Speech</title>
+		<base href="" target="_blank">
 	</head>
 	<body class="h-screen flex justify-between items-center flex-col">
 		<header
-			class="flex justify-between items-center px-8 py-4 border-0.5 border-b-slate-200 w-screen"
+			class="flex justify-between items-center px-8 py-4 w-screen"
 		>
 			<a href="#" class="flex justify-start items-center gap-4">
 				<svg
@@ -54,6 +56,17 @@
 				</button>
 			</form>
 		</main>
+		<footer class="w-screen flex justify-center align-center px-8 py-4 gap-6" id="contact">
+			<a href="https://github.com/snehasharma1111">
+				<i data-feather="github"></i>
+			</a>
+			<a href="https://linkedin.com/in/snehasharma1111">
+				<i data-feather="linkedin"></i>
+			</a>
+			<a href="https://snehasharma1111.github.io/resume">
+				<i data-feather="file"></i>
+			</a>
+		</footer>
 		<script src="./app.js"></script>
 	</body>
 </html>
